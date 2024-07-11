@@ -1,31 +1,85 @@
 
-* {
-background: #1c2128;
-padding: 7px;
+.head {
+  background: #2d333b;
+  font-family: sans-serif;
+  
+}
+
+.introHeader {
+  padding: 2%;
+  color: #9da7b3
+}
+.description {
+  padding: 2%;
+  color: #9da7b3
+}
+.body {
+  background:  #2d333b;
 font-family: sans-serif;
 }
 
 
-.btn {
+.btnRun {
     position: absolute;
+    background: #1c2128;
     color: #9da7b3;
     border-radius: 8px;
     border: 2px solid #305d92;
     transform: translateY(-50%);
     transition-duration: 0.4s;
+    top: 95%;
+    left: 27px;
+    width: 110px;
   }
 
 
-  .btn:hover {
-    background-color: #51545d; /* Green */
+  .btnRun:hover {
+    background-color: #51545d; 
     color: #bfc5cc;
 
   }
 
+
+  
+.btnCopy {
+  position: absolute;
+  background: #1c2128;
+  color: #9da7b3;
+  border-radius: 8px;
+  border: 2px solid #305d92;
+  transform: translateY(-50%);
+  transition-duration: 0.4s;
+  top: 95%;
+left: 27px;
+  width: 110px;
+}
+
+
+.btnCopy:hover {
+  background-color: #51545d; 
+  color: #bfc5cc;
+
+}
  .input {
     position: absolute; 
-    color: #9da7b3; 
+    background: #1c2128;
     border: 2px solid #000000;
     transform: translateY(-50%);
     border-radius: 8px;
+    color: #9da7b3;
+    top: 95%; 
+    left: 148px; 
+    width: 405px;
+ }
+
+
+ .ryanImg {
+  padding: 5%;
+  width:540px;
+  height:405px;
+ }
+
+ .btnDiv {
+  
+  padding: 5%;
  }
