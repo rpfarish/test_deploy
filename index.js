@@ -1,5 +1,4 @@
 function RandomID() {
-    const value = Math.random().toString(36).substring(2,8);
 
     var length = 50,
         charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()<>?/",
@@ -8,7 +7,10 @@ function RandomID() {
         retVal += charset.charAt(Math.floor(Math.random() * n));
     }
         document.getElementById('textBox').value = retVal;
-
+        
+        var c = document.getElementById('copyBtn');
+        c.innerHTML = "Copy text";
+        c.style.borderColor = "#305d92"; 
     }
 
     function copyText() {
@@ -24,8 +26,11 @@ function RandomID() {
             navigator.clipboard.writeText(copyText.value);
 
             /* Alert the copied text */
-            alert("Password Copied!");
-
+            //alert("Password Copied!");
+            var c = document.getElementById('copyBtn');
+            c.innerHTML = "Copied!";
+            c.style.borderColor = "#338236"; 
+            
         }
     
     }
